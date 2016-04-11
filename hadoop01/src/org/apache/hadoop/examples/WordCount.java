@@ -76,7 +76,6 @@ public class WordCount {
       System.exit(2);
     }
     
-    ToolRunner.run(null, args);
     Job job = new Job(conf, "word count");
     job.setJarByClass(WordCount.class);
     job.setMapperClass(TokenizerMapper.class);
